@@ -1,0 +1,237 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.wrap {
+    display: flex;
+    background-color: #efefef;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    height: 60%;
+    border: 1px solid #efefef;
+    background-color: white;
+    margin: 7px;
+    border-radius: 0.2rem;
+}
+.left-header {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    padding: 10px;
+    border-bottom: 1px solid #efefef;
+    align-items: center;
+}
+.left-header-icon {
+    display: flex;
+    flex: 7;
+    align-items: center;
+}
+.left-header-icon img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.left-header-name {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    align-items: center;
+}
+.left-header-name span:first-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.left-header-name span:last-child {
+    color: #848484;
+}
+.left-body {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    padding: 30px;
+    border-bottom: 1px solid #efefef;
+    font-size: 0.8rem;
+}
+.left-footer {
+    padding: 10px;
+}
+.left-footer span {
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+.left-body-wrap {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.left-body-icon {
+    margin-right: 20px;
+}
+.left-footer {
+    text-align: center;
+}
+.fa-facebook {
+    font-size: 1.4rem;
+    color: black;
+}
+.fa-instagram {
+    font-size: 1.5rem;
+    color: black;
+}
+/* Right */
+.right {
+    flex: 7;
+    background-color: white;
+    margin: 7px;
+    border-radius: 0.2rem;
+    border: 1px solid #efefef;
+    padding: 20px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    height: 94%;
+}
+::-webkit-scrollbar {
+    display:none;
+}
+.right-header {
+    height: 40px;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 10px;
+}
+.right-header span {
+    font-size: 1.2rem;
+}
+.right-body-title {
+    display: flex;
+    align-items: center;
+    color: #7c7c7c;
+    font-weight: 800;
+}
+.right-body-title-icon {
+    padding: 7px;
+}
+.right-body-title-desc {
+    flex: 1;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #efefef;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.right-body-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    padding: 10px;
+    padding-left: 42px;
+}
+.content-header {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.link {
+    text-decoration: none;
+    color: #515cff;
+    font-size: 0.8rem;
+}
+.content-header a:not(.link) {
+    text-decoration: none;
+    color: #515cff;
+    font-size: 0.8rem;
+}
+.content-header a:hover {
+    color: #575ce0;
+}
+.content-body {
+    color: #878787;
+    font-size: 0.8rem;
+}
+.content-project {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+.content-footer {
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+.right-body-interest-content {
+    display: flex;
+    font-size: 0.9rem;
+    padding: 10px;
+    padding-left: 43px;
+}
+.interest {
+    border: 1px solid #454bf7;
+    color: white;
+    background-color: #575ce0;
+    border-radius: 0.3rem;
+    padding: 3px;
+    margin-right: 5px;
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+.divider {
+    border-bottom: 1px solid #efefef;
+    margin-top: 15px;
+}
+.project {
+    margin-left: 5px;
+}
+.experience {
+    margin-left: 20px;
+}
+.awards {
+    margin-left: 15px;
+}
+.work-experience {
+    margin-left: 14px;
+}
+.fa-map-pin {
+    margin-right: 5px;
+}
+.content-header a {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+/* Media Query */
+@media screen and (max-width: 800px) {
+    .wrap {
+        flex-direction: column;
+    }
+    .left-body {
+        flex-direction: row;
+        flex: 0;
+    }
+    .left {
+        flex: none;
+        height: 40%;
+    }
+    .right {
+        overflow: visible;
+        height: 1000vh;
+    }
+}
+@media screen and (max-width: 680px) {
+    .left {
+        height: 60%;
+    }
+    .left-body {
+        flex-direction: column;
+        height: 300px;
+        flex: 4;
+        padding-top: 10;
+        padding-bottom: 10;
+    }
+    .right {
+        overflow:visible;
+    }
+}
